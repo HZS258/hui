@@ -15,6 +15,26 @@
     </init-param>
   </filter>
 
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.javaweb.servlet.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CarServlet</servlet-name>
+    <servlet-class>com.javaweb.servlet.CarServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CarServlet</servlet-name>
+    <url-pattern>/CarServlet</url-pattern>
+  </servlet-mapping>
+
   <filter-mapping>
     <filter-name>CharacterFilter</filter-name>
     <!-- 来自客户端的所有请求都经过字符过滤器-->
@@ -22,6 +42,6 @@
   </filter-mapping>
 
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
   </welcome-file-list>
 </web-app>
